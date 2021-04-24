@@ -3,8 +3,6 @@
 
 This is a Convolutional Neural Networks (CNN) project to detect dog breeds based on dog pictures! Given an image of a dog, the algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
 
-[image1]: ./images/WGD.jpeg
-
 
 
 ## Project Motivations
@@ -21,6 +19,8 @@ git clone git@github.com:junfang219/Convolutional_Neural_Networks_Dog_Identifica
 ```
 
 2. Another option is to navigate to the dog_app.ipynb
+
+   https://github.com/junfang219/Convolutional_Neural_Networks_Dog_Identification_App/blob/main/dog_app.ipynb
 
 
 ## Project Structure
@@ -45,6 +45,8 @@ We break the jupytor notebook into separate steps:
 
   The results are showing in the dog_app jupytor notebook file.
 
+
+
 ## Download Datasets and Bottleneck files
 
 If you want to run this code on your local computer, you'll also need to download the following;
@@ -64,6 +66,30 @@ If you want to run this code on your local computer, you'll also need to downloa
 [Xception bottleneck](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) features for the dog dataset. Place it in the repo, at location path/to/dog-project/bottleneck_features
 
 
+
+## Requirements
+
+opencv-python==3.2.0.6
+h5py==2.6.0
+matplotlib==2.0.0
+numpy==1.12.0
+scipy==0.18.1
+tqdm==4.11.2
+keras==2.0.2
+scikit-learn==0.18.1
+pillow==4.0.0
+ipykernel==4.6.1
+tensorflow==1.0.0
+
+## Result summary
+
+**Model. Accuracy**
+
+CNN from scratch = 7.89%
+
+CNN with VGG16 = 38.8%
+
+CNN with Resnet50 = 81.58%
 
 ## Blog Post
 
